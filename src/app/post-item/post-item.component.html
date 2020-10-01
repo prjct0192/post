@@ -1,5 +1,6 @@
 <div class="card" style="width: 18rem;">
   <div class="card-body">
+    <img *ngIf="img" src="{{ img }}" class="card-img-top" alt=""/>
     <h5 class="card-title">{{ (id) + ' ' + (title.toUpperCase()) }}</h5>
     <p class="card-text">{{ body }}</p>
     <a href="#" class="card-link">Card link</a>
@@ -7,10 +8,5 @@
   </div>
 </div>
 
-<div class="card" style="width: 18rem;">
-  <img src="{{ img }}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ (id) + ' ' + (title.toUpperCase()) }}</h5>
-    <p class="card-text">{{ body }}</p>
-  </div>
-</div>
+
+

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-interface PLComponent {
+interface IPost {
   userId?: number,
   id?: number,
   title: string,
   body: string,
-  img: string,
+  img?: string,
 }
 @Component({
   selector: 'app-post-list',
@@ -12,9 +12,8 @@ interface PLComponent {
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent {
-  list: PLComponent[] = [
+  list: IPost[] = [
     {
-      "img": 'https://lh3.googleusercontent.com/proxy/Mc9z6W_28czEGDzW2zRXmLDiWjiEZ_kpWEjE9g1BSQD27lp6hyRS9cz5EHIS8WSyY-EbC4_9XVFn6-kre8nRLsS3lgEvqMNsv0UCSj6CYjweqbjY86tNLbdGnN6xkgKTy2o-zAkQA-qCWxjQyatqjS0fSghf',
       "userId": 1,
       "id": 1,
       "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
@@ -42,7 +41,6 @@ export class PostListComponent {
       "body": "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit"
     },
     {
-      "img": 'https://i.pinimg.com/originals/e2/da/15/e2da154009eaca30b588ff99adac8426.webp',
       "userId": 1,
       "id": 5,
       "title": "nesciunt quas odio",
@@ -56,7 +54,6 @@ export class PostListComponent {
       "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     },
     {
-      "img": 'https://i.pinimg.com/originals/80/7d/23/807d2381590f9103de2d4378fe8782b6.jpg',
       "userId": 1,
       "id": 7,
       "title": "magnam facilis autem",
